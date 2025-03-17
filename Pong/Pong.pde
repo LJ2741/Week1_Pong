@@ -17,7 +17,6 @@ void setup(){
 void draw(){
   background(0);
   player.Display();
-  player.Update();
   ball.Display();
   ball.Update();
   enemy.Display();
@@ -25,6 +24,10 @@ void draw(){
   Collisions();
   AI();
   Score();
+}
+
+void keyPressed() {
+  player.movement();
 }
 
 void Collisions(){

@@ -3,10 +3,11 @@ class Enemy{
   PVector velocity;
   
   Enemy(){
-    pos = new PVector(2400,100);
+    pos = new PVector(displayWidth - 30,100);
     velocity = new PVector(0,15);
   }
   void Display(){
+    pos.x = displayWidth - 30;
     rect(pos.x,pos.y,20,125,10);
   }
   void Update(){
